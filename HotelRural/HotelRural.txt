@@ -1,0 +1,18 @@
+Un pequeño hotel rural necesita una aplicación software que le permita administrar su negocio: Gestionar las reservas de habitaciones, Gestionar las habitaciones libres/ocupadas, Facturar a los clientes y Permitir listados y estadísticas. Del cliente interesan su nombre, DNI, dirección y teléfono. Cada habitación tiene un número y tipo (simple, doble y matrimonio). Las habitaciones pueden estar libres, reservadas u ocupadas y siempre hay un solo responsable por habitación. Cualquier suposición, por favor anotarla (mientras no contradiga el enunciado)
+
+	a) Dibuje un Diagrama Entidad-Relación para describir la situación del hotel, indicando cardinalidades. Pasar a tercera forma normal.
+
+b) Dibujar un diagrama relacional a partir del DER.
+
+c) Escribir la composición de cada tabla, su clave primaria y foránea (si la tuviera).
+
+d) Elabore una consulta SQL que permita obtener una vista de las habitaciones y su ocupación (fecha inicio, fecha fin, responsable y costo de la estadía) dado un año en particular.
+
+
+
+1_Veo posibles entidades
+2_Veo el orden cronologico
+3_Armo diagrama con entidades respetando el orden cronologico y me fijo si van teniendo relaciones
+4_Veo si las relaciones son fuertes o debiles (relacion debil gralmente puede ser reemplazado por un atributo con conjunto valores predefinidos)
+5_Fijo cardinalidades
+6_ Veo relaciones n a n si tienen atributos
