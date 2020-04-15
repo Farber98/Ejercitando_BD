@@ -1,0 +1,22 @@
+DICCIONARIO DE DATOS CINES
+
+/* ENTIDADES */
+CINES = {@IdCines + Cine}
+SALAS = {@IdSalas + Sala}
+TIPOSALA = {@IdTipoSala + TipoSala + Estado ['A' | 'B'] }		/* 'A': Activo - 'B': Baja*/
+BUTACAS = {@IdButacas + Fila + Columna + Estado ['L' | 'R']}	/* 'L': Libre - 'R': Reservado*/
+RESERVAS = {@IdReservas + DNI}
+FUNCIONES = {@IdFunciones + Precio + FechaInicio + FechaFin}
+PELICULAS = {@IdPeliculas + Pelicula + Duracion + Sinopsis}
+ACTORES = {@IdActores + Actor}
+
+/* RELACIONES */
+tienen = {@IdCines + @IdSalas}
+clasifican = {@IdTipoSala + @IdSalas}
+contienen = {@IdSalas + @IdButacas}
+formada por = {@IdButacas + @IdReservas}
+sobre = {@IdReservas + @IdFunciones}
+albergan = {@IdSalas + @IdFunciones}
+reproducen = {@IdFunciones + @IdPeliculas}
+protagonizan = {@IdPeliculas + @IdActores}
+
